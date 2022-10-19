@@ -1,0 +1,20 @@
+@import "bootstrap";
+
+.header {
+  width: 100%;
+  height: 90vh; // I saw 1066px in design but I don't know whether to use it or not
+  background-size: cover;
+  background: url("../../image/Layer.png") no-repeat center center;
+
+  h1 {
+    -webkit-text-stroke: 2px white;
+    font: normal normal normal 50px Arial;
+    color: transparent;
+    margin: 0;
+    text-align: center;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 45px;
+    }
+  }
+}
